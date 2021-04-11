@@ -1,0 +1,51 @@
+:root {
+    --headerH: 70px;
+    --footerH: 54px;
+    --vertiacalH: calc(var(--headerH) + var(--footerH));
+    --vertiacalSpaceH:  calc(100vh - var(--vertiacalH));
+}
+header {
+    top:0;
+    position: fixed;
+    width: 100%;
+    height: var(--headerH);
+    z-index: 10;
+}
+#middle-contanier {
+    position: relative;
+    margin-top: var(--headerH);
+    height: var(--vertiacalSpaceH);
+}
+main  {
+    position: absolute;
+    left:0%;
+    top:0;
+    right:0;
+    bottom: 0;
+    overflow: auto;
+
+    transition: left 800ms ease-in-out;
+}
+aside {
+    position: absolute;
+    top:0;
+    left: -30%;
+    bottom: 0px;
+    width: 30%;
+
+    transition: left 800ms ease-in-out;
+}
+.asideOpened aside {
+    left: 0%;
+}
+.asideOpened main {
+    left:30%;
+}
+footer {
+    position: relative;
+    z-index: 10;
+}
+hr.sidebar-divider {
+    border-top: 1px solid rgba(255,255,255,.15);
+    margin: 0 1rem 1rem;
+}
