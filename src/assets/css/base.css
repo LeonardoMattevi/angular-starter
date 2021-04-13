@@ -4,6 +4,8 @@
     --vertiacalH: calc(var(--headerH) + var(--footerH));
     --vertiacalSpaceH:  calc(100vh - var(--vertiacalH));
 }
+
+/* layout */
 header {
     top:0;
     position: fixed;
@@ -15,6 +17,7 @@ header {
     position: relative;
     margin-top: var(--headerH);
     height: var(--vertiacalSpaceH);
+    z-index: 30;
 }
 main  {
     position: absolute;
@@ -29,9 +32,10 @@ main  {
 aside {
     position: absolute;
     top:0;
-    left: -30%;
+    left: -320px;
     bottom: 0px;
-    width: 30%;
+    width: 320px;
+    overflow: auto;
 
     transition: left 800ms ease-in-out;
 }
@@ -39,7 +43,7 @@ aside {
     left: 0%;
 }
 .asideOpened main {
-    left:30%;
+    left:320px;
 }
 footer {
     position: relative;
@@ -49,3 +53,10 @@ hr.sidebar-divider {
     border-top: 1px solid rgba(255,255,255,.15);
     margin: 0 1rem 1rem;
 }
+@media (min-width: 576px) {
+    .asideOpened main {
+        left: 0px;
+    }
+}
+
+/* endlayout */

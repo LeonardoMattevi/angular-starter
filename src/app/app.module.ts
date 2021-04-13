@@ -8,6 +8,7 @@ import { HeaderComponent } from './layout/header/header.component';
 import { AsideComponent } from './layout/aside/aside.component';
 import { MenuComponent } from './layout/aside/menu/menu.component';
 import { ToolbarComponent } from './layout/header/toolbar/toolbar.component';
+import { SearchbtnComponent } from './layout/header/toolbar/searchbtn.component';
 import { HomeComponent } from './features/home/home.component';
 
 @NgModule({
@@ -18,6 +19,7 @@ import { HomeComponent } from './features/home/home.component';
     AsideComponent,
     MenuComponent,
     ToolbarComponent,
+    SearchbtnComponent,
     HomeComponent
   ],
   imports: [
