@@ -11,7 +11,7 @@ header {
     position: fixed;
     width: 100%;
     height: var(--headerH);
-    z-index: 10;
+    z-index: 50;
 }
 #middle-contanier {
     position: relative;
@@ -36,6 +36,7 @@ aside {
     bottom: 0px;
     width: 320px;
     overflow: auto;
+    z-index: 10;
 
     transition: left 800ms ease-in-out;
 }
@@ -43,7 +44,7 @@ aside {
     left: 0%;
 }
 .asideOpened main {
-    left:320px;
+    left:0px;
 }
 footer {
     position: relative;
@@ -55,8 +56,14 @@ hr.sidebar-divider {
 }
 @media (min-width: 576px) {
     .asideOpened main {
-        left: 0px;
+        left: 320px;
     }
 }
 
 /* endlayout */
+
+/* bootstrap extension*/ 
+body .bg-dark.navbar-dark .navbar-nav .nav-link:hover {
+    color: #18bc9c !important;
+}
+/* end bootstrap extension*/

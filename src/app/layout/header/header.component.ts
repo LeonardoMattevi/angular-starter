@@ -15,8 +15,16 @@ import { MenuService } from '../aside/menu/menu.service';
         <a href="/" class="d-block d-flex align-items-center justify-content-center mr-2">
           <img height="32px" class="app-logo" src="./assets/img/logo-social-sq.png" title="logo" />
         </a>
-
-        <app-toolbar></app-toolbar>
+        
+        <ul class="navbar-nav navbar-dark text-light mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Text 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Text 2</a>
+          </li>
+        </ul>
+        <app-toolbar ></app-toolbar>
       </nav>
     </header>
   `,

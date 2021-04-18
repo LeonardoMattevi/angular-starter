@@ -10,6 +10,7 @@ import { MenuComponent } from './layout/aside/menu/menu.component';
 import { ToolbarComponent } from './layout/header/toolbar/toolbar.component';
 import { SearchbtnComponent } from './layout/header/toolbar/searchbtn.component';
 import { HomeComponent } from './features/home/home.component';
+import { DropdownComponent } from './shared/components/dropdown/dropdown.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HomeComponent } from './features/home/home.component';
     MenuComponent,
     ToolbarComponent,
     SearchbtnComponent,
-    HomeComponent
+    HomeComponent,
+    DropdownComponent
   ],
   imports: [
     BrowserModule,
