@@ -16,6 +16,7 @@ import { DropdownComponent } from './shared/components/dropdown/dropdown.compone
 import { UsersComponent } from './features/users/users.component';
 
 import { ReverseString } from './shared/pipes/reverse-string.pipe';
+import { HighlightDirective } from './shared/directives/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,8 @@ import { ReverseString } from './shared/pipes/reverse-string.pipe';
     UsersComponent,
 
     ReverseString,
+
+    HighlightDirective,
   ],
   imports: [
     BrowserModule,

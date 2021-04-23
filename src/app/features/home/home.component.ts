@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   template: `
     <div class="p-3">
       home works!<br>
-      {{"!skrow epip" | reverseString}}
+      <span class="d-inline-block p-3" appHighlight>{{"!skrow epip" | reverseString}}</span>
     </div>
   `,
   styles: [
