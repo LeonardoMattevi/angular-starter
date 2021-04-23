@@ -15,6 +15,8 @@ import { HomeComponent } from './features/home/home.component';
 import { DropdownComponent } from './shared/components/dropdown/dropdown.component';
 import { UsersComponent } from './features/users/users.component';
 
+import { ReverseString } from './shared/pipes/reverse-string.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +28,9 @@ import { UsersComponent } from './features/users/users.component';
     SearchbtnComponent,
     HomeComponent,
     DropdownComponent,
-    UsersComponent
+    UsersComponent,
+
+    ReverseString,
   ],
   imports: [
     BrowserModule,

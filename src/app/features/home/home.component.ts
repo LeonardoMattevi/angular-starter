@@ -4,7 +4,8 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-home',
   template: `
     <div class="p-3">
-      home works!
+      home works!<br>
+      {{"!skrow epip" | reverseString}}
     </div>
   `,
   styles: [
