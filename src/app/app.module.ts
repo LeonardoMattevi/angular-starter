@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './layout/footer/footer.component';
@@ -11,6 +13,7 @@ import { ToolbarComponent } from './layout/header/toolbar/toolbar.component';
 import { SearchbtnComponent } from './layout/header/toolbar/searchbtn.component';
 import { HomeComponent } from './features/home/home.component';
 import { DropdownComponent } from './shared/components/dropdown/dropdown.component';
+import { UsersComponent } from './features/users/users.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +25,13 @@ import { DropdownComponent } from './shared/components/dropdown/dropdown.compone
     ToolbarComponent,
     SearchbtnComponent,
     HomeComponent,
-    DropdownComponent
+    DropdownComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

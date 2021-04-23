@@ -17,8 +17,8 @@ import { Component, OnInit } from '@angular/core';
     <div class="sidebar-heading pl-3 pr-3">Services</div>
 
     <div class="nav-item">
-      <a class="nav-link p-3" href="/service-name">
-        <i class="bi bi-caret-right-square"></i><span class="menu-label">&nbsp;Service name</span>
+      <a class="nav-link p-3" href="/users">
+        <i class="bi bi-caret-right-square"></i><span class="menu-label">&nbsp;Users</span>
       </a>
     </div>
   </div>
