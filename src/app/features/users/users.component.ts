@@ -8,8 +8,8 @@ import { UsersService } from './services/users.service';
     <div class="p-3">
       <div class="card-columns">
         <div class="card"
-          *ngFor="let user of users?.data">
-          <img [src]="user.avatar" />
+          *ngFor="let user of (userService.users$ | async)?.data">
+          <img class="card-img-top" [src]="user.avatar" />
           <div class="card-body">
             <h5 class="card-title">{{user.first_name}} {{user.last_name}}</h5>
             <p class="card-text">{{user.email}}</p>
@@ -23,15 +23,10 @@ import { UsersService } from './services/users.service';
 })
 export class UsersComponent implements OnInit {
   users: UserCollection= null;
-  constructor(private userService: UsersService) { }
+  constructor(public userService: UsersService) { }
 
   ngOnInit(): void {
-    this.userService.getUsers().subscribe((res: any) => {
-      this.users = res;
-    }, (err) => {
-      console.log(err);
-      // todo: errors management
-    })
+    this.userService.getUsers();
   }
 
 }
